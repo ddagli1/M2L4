@@ -1,0 +1,25 @@
+/* Renk değişimi animasyonu tanımlanıyor */
+@keyframes color-change {
+  /* Animasyonun başlangıcında (0%), renk mavi olacak */
+  0% {
+    color: blue;
+  }
+
+  /* Animasyonun ortasında (50%), renk kırmızı olacak */
+  50% {
+    color: red;
+  }
+
+  /* Animasyonun sonunda (100%), renk tekrar mavi olacak */
+  100% {
+    color: blue;
+  }
+}
+
+/* h1 başlığına fareyle gelindiğinde (hover olduğunda) animasyon çalışacak */
+h1:hover {
+  /* Animasyon ismi: color-change */
+  /* Süre: 3 saniye */
+  /* infinite: Animasyon sonsuz döngüde devam edecek */
+  animation: color-change 3s infinite;
+}
